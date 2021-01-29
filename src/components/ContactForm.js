@@ -68,20 +68,20 @@ export default function ContactForm() {
                 <input type="hidden" name="form-name" value="contact" />
                     <div className="flex flex-col text-green-100 ">
                     <label>Name:</label>
-                    <Field type="name" id="name" name="name" placeholder="Name" className="pl-2 rounded py-2 bg-green-50 text-gray-800 focus:ring-4 focus:ring-gray-700"/>
+                    <Field type="name" id="name" name="name" placeholder="Name" className="pl-2 rounded py-2 bg-green-50 text-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-700"/>
                     <div className="bg-red-300 text-gray-800 ml-1 px-1 max-w-max"> <ErrorMessage name="name"/></div>
                     </div>
 
                      <div className="flex flex-col text-green-100 mt-4">
                     <label>Email Address:</label>
-                    <Field type="email" id="email" name="email" placeholder="Email Address" className="pl-2 py-2 bg-green-50 rounded text-gray-800 focus:ring-4 focus:ring-gray-700" />
+                    <Field type="email" id="email" name="email" placeholder="Email Address" className="pl-2 py-2 bg-green-50 rounded text-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-700" />
                     <div className="bg-red-300 text-gray-800 ml-1 px-1 max-w-max"><ErrorMessage name="email"/></div>
                     </div>
 
 
                     <div className="flex flex-col text-green-100 mt-4">
                     <label>Message:</label>
-                    <Field as="textarea" id="message" name="message" placeholder="Message" className="pl-2 py-2 bg-green-50 text-gray-800 rounded focus:ring-4 focus:ring-gray-700"/>
+                    <Field as="textarea" id="message" name="message" placeholder="Message" className="pl-2 py-2 bg-green-50 text-gray-800 rounded focus:outline-none focus:ring-4 focus:ring-gray-700"/>
                     <ErrorMessage name="message"/>
                     </div>
 
